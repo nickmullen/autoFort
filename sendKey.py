@@ -440,7 +440,7 @@ def BuyFort():
     KeyStroke(UI_PANEL_DOWN)
     KeyStroke(UI_PANEL_DOWN)
     time.sleep(1)
-    loop=50
+    loop=BUY_VOLUME
     while loop>0:
         KeyStroke(UI_PANEL_RIGHT)
         loop-=1
@@ -494,7 +494,7 @@ print("Started fortification macro at", datetime.datetime.strftime(datetime.date
 
 ReadConfig()
 
-buyCycle=0
+buyCycle=BUY_CYCLE
 while buyCycle>0:
     buyCycle-=1
     StartCountdown()
