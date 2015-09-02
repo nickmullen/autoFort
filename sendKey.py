@@ -108,9 +108,8 @@ def GoToContactsBit():
 
 def GoToPowerContact():
     KeyStroke(UI_PANEL_LEFT)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
+    KeyStroke(UI_PANEL_UP)
+    KeyStroke(UI_PANEL_UP)
     KeyStroke(UI_PANEL_SELECT)
     time.sleep(2)
     return True
@@ -139,15 +138,7 @@ def BackToMenu():
     KeyStroke(UI_PANEL_SELECT)
     time.sleep(1)
     KeyStroke(UI_PANEL_LEFT)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
-    KeyStroke(UI_PANEL_DOWN)
+    KeyStroke(UI_PANEL_UP)
     KeyStroke(UI_PANEL_SELECT)
     return True
 
@@ -158,6 +149,8 @@ def ReadConfig():
     UI_PANEL_LEFT=SetKeyboardConsts(config.get("KeyBindings", "UI_PANEL_LEFT"))
     global UI_PANEL_RIGHT
     UI_PANEL_RIGHT=SetKeyboardConsts(config.get("KeyBindings", "UI_PANEL_RIGHT"))
+    global UI_PANEL_UP
+    UI_PANEL_UP=SetKeyboardConsts(config.get("KeyBindings", "UI_PANEL_UP"))
     global UI_PANEL_DOWN
     UI_PANEL_DOWN=SetKeyboardConsts(config.get("KeyBindings", "UI_PANEL_DOWN"))
     global UI_PANEL_SELECT

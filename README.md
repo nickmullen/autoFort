@@ -1,13 +1,24 @@
 # autoFort
-A quick python script for Elite Dangerous that automatically gathers fortification when you're afk.
+A quick python script for Elite Dangerous that automatically gathers fortification packages every half hour, intended for use as a keyboard macro (although runnable seperately)
 
-## Disclaimer
+## Disclaimer part 1
+It has been suggested that this might be foul of the EULA. Whilst I think I'm still within the bounds of acceptable macro writing, I've got no official sanction from Frontier to do this - and they might take a dim view of it.
+
+I'm certainly not doing anything that in anyway modifies the game code, but I'm not a lawyer! If I hear of anyone getting shadow banned for this kind of thing, I'll pull the script immediately.
+
+## Disclaimer part 2
 Use at your own risk!
+
 This is nothing but an app to send key events to WHATEVER application is in the foreground. If that happens not to be Elite, then a whole bunch of keystrokes will get sent to the wrong application!
+
 This script has only been tested on Windows.
-This script has only been tested in Carter Port.
+
+This script has only been tested in Carter Port and Ito (although it should work in them all)
+
 This script is DUMB - it cannot receive any feedback from EliteDangerous to say that anything "worked". Therefore if you leave the UI in an unexpected location before starting, bad things might happen!
+
 I take no responsibility if the script causes you to accidentally sell a ship, buy something you didn't want etc...
+
 During alpha testing, three kittens exploded and a duck got sick...
 
 ## Requirements
@@ -33,6 +44,7 @@ Just over 30 mins later, you'll hear the countdown beep sequence and the whole t
 
 ## Problems
 Sucks to be you!
+
 (oh alright - buzz me in game / via the Minutemen forums / FedEscort Channel / carrier pidgeon)
 
 ## Acknowledgement
